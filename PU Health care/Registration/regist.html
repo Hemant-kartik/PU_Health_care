@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <!-- Registration Form -->
+        <div id="register">
+            <h2>Register</h2>
+            <form action="register.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" name="name" required><br>
+
+                <label for="age">Age:</label>
+                <input type="number" name="age" required><br>
+
+                <label for="phone">Phone:</label>
+                <input type="text" name="phone" required><br>
+
+                <label for="gender">Gender:</label>
+                <select name="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select><br>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" required><br>
+
+                <label for="anatomy">Anatomy:</label>
+                <select name="anatomy" required>
+                    <option value="Normal">Normal</option>
+                    <option value="Athletic">Athletic</option>
+                    <option value="Other">Other</option>
+                </select><br>
+
+                <label for="weight">Weight:</label>
+                <input type="number" name="weight" step="0.1" required><br>
+
+                <label for="height">Height:</label>
+                <input type="number" name="height" step="0.1" required><br>
+
+                <label for="address">Address:</label>
+                <textarea name="address" required></textarea><br>
+
+                <label for="password">Password:</label>
+                <input type="password" name="password" required><br>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <!-- Login Form -->
+        <div id="login">
+            <h2>Login</h2>
+            <form action="login.php" method="POST">
+                <label for="email">Email:</label>
+                <input type="email" name="email" required><br>
+
+                <label for="password">Password:</label>
+                <input type="password" name="password" required><br>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
